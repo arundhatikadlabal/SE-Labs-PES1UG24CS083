@@ -8,7 +8,7 @@
 
 ---
 
-## Lab 1-3: Requirements Engineering & UML Use-Case Modelling
+## Lab 1: Requirements Engineering & UML Use-Case Modelling
 
 **Folder:** [`Lab1_deliverables/`](Lab1_deliverables/)
 
