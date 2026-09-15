@@ -12,15 +12,13 @@
 
 **Folder:** [`Lab1_deliverables/`](Lab1_deliverables/)
 
-- `Lab1_PES1UG24CS083_SectionB.pdf` - combined submission containing:
-  - **Requirements Table:** 5 FRs + 2 NFRs (Req ID, Type, Description, Priority, Acceptance Criteria, Rationale)
-  - **UML Use-Case Diagram:** actors, use cases, `<<include>>` and `<<extend>>` relations
-  - **Use-Case Flow Specification:** preconditions, postconditions, main success scenario, alternate flow
-
-- `Lab3_ComponentModelling_PES1UG24CS083.pdf` - Component Modelling & Architectural Pattern Selection (continuation of Lab 1, same problem statement) containing:
-  - **UML Component Diagram (Layered Architecture):** 5 components across Presentation, Business, and Data layers, with 4 required interfaces shown using provided/required (ball-and-socket) notation
-  - **Architectural Justification:** architecture selection, two scenario-specific reasons, one security advantage, one performance benefit (max 1 page)
-  - **Requirement Traceability:** maps every FR-001 to FR-005 and NFR-001 to NFR-002 from the Lab 1 requirements table to the component that satisfies it
+- `Requirements_Table_PES1UG24CS083.pdf` - **Requirements Table:** 5 FRs + 2 NFRs (Req ID, Type, Description, Priority, Acceptance Criteria, Rationale)
+- `UseCase_Diagram_PES1UG24CS083.pdf` - **UML Use-Case Diagram:** actors, use cases, `<<include>>` and `<<extend>>` relations
+- `UseCase_Flow_PES1UG24CS083.pdf` - **Use-Case Flow Specification:** preconditions, postconditions, main success scenario, alternate flow
+- `Lab3_ComponentModelling_PES1UG24CS083.pdf` - **Component Modelling & Architectural Pattern Selection** (continuation of Lab 1, same problem statement):
+  - UML Component Diagram (Layered Architecture): 5 components across Presentation, Business, and Data layers, with 4 required interfaces shown using provided/required (ball-and-socket) notation
+  - Architectural Justification: architecture selection, two scenario-specific reasons, one security advantage, one performance benefit (max 1 page)
+  - Requirement Traceability: maps every FR-001 to FR-005 and NFR-001 to NFR-002 to the component that satisfies it
 
 ## Lab 2: Agile Backlog Creation & Sprint Simulation in Jira
 
@@ -37,7 +35,7 @@
 
 **Folder:** [`Lab3_deliverables/`](Lab3_deliverables/)
 
-- `AttendEase_Synopsis.pdf` - Team 3 project synopsis containing:
+- `AttendEase_Synopsis (3).pdf` - Team 3 project synopsis containing:
   - Project title, group number, and team profile (SRNs, USNs, owned functionality)
   - Problem statement, proposed description, target users/stakeholders
   - Objectives, scope (in/out), functional features, and team-wise ownership matrix
@@ -56,12 +54,15 @@
 ```
 SE-Labs-PES1UG24CS083/
 ├── Lab1_deliverables/
-│   ├── Lab1_PES1UG24CS083_SectionB.pdf
+│   ├── README.md
+│   ├── Requirements_Table_PES1UG24CS083.pdf
+│   ├── UseCase_Diagram_PES1UG24CS083.pdf
+│   ├── UseCase_Flow_PES1UG24CS083.pdf
 │   └── Lab3_ComponentModelling_PES1UG24CS083.pdf
 ├── Lab2_deliverables/
 │   └── Lab2_PES1UG24CS083_SectionB.pdf
 ├── Lab3_deliverables/
-│   ├── AttendEase_Synopsis.pdf
+│   ├── AttendEase_Synopsis (3).pdf
 │   └── AttendEase_SRS.pdf
 └── README.md
 ```
