@@ -8,7 +8,7 @@
 
 ---
 
-## Lab 1: Requirements Engineering & UML Use-Case Modelling
+## Lab 1: Requirements Engineering, UML Use-Case Modelling & Component Modelling
 
 **Folder:** [`Lab1_deliverables/`](Lab1_deliverables/)
 
@@ -16,6 +16,11 @@
   - **Requirements Table:** 5 FRs + 2 NFRs (Req ID, Type, Description, Priority, Acceptance Criteria, Rationale)
   - **UML Use-Case Diagram:** actors, use cases, `<<include>>` and `<<extend>>` relations
   - **Use-Case Flow Specification:** preconditions, postconditions, main success scenario, alternate flow
+
+- `Lab3_ComponentModelling_PES1UG24CS083.pdf` - Component Modelling & Architectural Pattern Selection (continuation of Lab 1, same problem statement) containing:
+  - **UML Component Diagram (Layered Architecture):** 5 components across Presentation, Business, and Data layers, with 4 required interfaces shown using provided/required (ball-and-socket) notation
+  - **Architectural Justification:** architecture selection, two scenario-specific reasons, one security advantage, one performance benefit (max 1 page)
+  - **Requirement Traceability:** maps every FR-001 to FR-005 and NFR-001 to NFR-002 from the Lab 1 requirements table to the component that satisfies it
 
 ## Lab 2: Agile Backlog Creation & Sprint Simulation in Jira
 
@@ -51,7 +56,8 @@
 ```
 SE-Labs-PES1UG24CS083/
 ├── Lab1_deliverables/
-│   └── Lab1_PES1UG24CS083_SectionB.pdf
+│   ├── Lab1_PES1UG24CS083_SectionB.pdf
+│   └── Lab3_ComponentModelling_PES1UG24CS083.pdf
 ├── Lab2_deliverables/
 │   └── Lab2_PES1UG24CS083_SectionB.pdf
 ├── Lab3_deliverables/
