@@ -44,8 +44,5 @@ SE-Labs-PES1UG24CS083/
 │   └── Lab3_ComponentModelling_PES1UG24CS083.pdf
 ├── Lab2_deliverables/
 │   └── Lab2_PES1UG24CS083_SectionB.pdf
-├── Lab3_deliverables/
-│   ├── AttendEase_Synopsis (3).pdf
-│   └── AttendEase_SRS.pdf
 └── README.md
 ```
