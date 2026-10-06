@@ -31,23 +31,6 @@
 
 **Jira project link:** [https://aruukadlabal.atlassian.net/jira/software/c/projects/CEP/boards/34/backlog](https://aruukadlabal.atlassian.net/jira/software/c/projects/CEP/boards/34/backlog)
 
-## Lab 3: Synopsis & Software Requirements Specification – AttendEase (Team 3 Mini-Project)
-
-**Folder:** [`Lab3_deliverables/`](Lab3_deliverables/)
-
-- `AttendEase_Synopsis (3).pdf` - Team 3 project synopsis containing:
-  - Project title, group number, and team profile (SRNs, USNs, owned functionality)
-  - Problem statement, proposed description, target users/stakeholders
-  - Objectives, scope (in/out), functional features, and team-wise ownership matrix
-  - Sprint-wise plan of work and proposed technology/tools
-- `AttendEase_SRS.pdf` - Software Requirements Specification containing:
-  - Introduction, overall description, and external interface requirements
-  - Use-case and domain/entity analysis models
-  - System features grouped by the 4 team ownership roles, with numbered functional requirements
-  - Non-functional, security, and business-rule requirements
-  - Glossary, field layouts, and requirement traceability matrix
-
----
 
 ## Repository Structure
 
