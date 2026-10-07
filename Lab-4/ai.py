@@ -1,0 +1,14 @@
+import random
+
+
+class AI:
+    def __init__(self, size=6):
+        self.size = size
+        self.tried = set()
+
+    def choose(self):
+        options = [(r, c) for r in range(self.size) for c in range(self.size)
+                   if (r, c) not in self.tried]
+        pos = random.choice(options)
+        self.tried.add(pos)
+        return f"{pos[0] + 1},{pos[1] + 1}"  # intentional representation mismatch
