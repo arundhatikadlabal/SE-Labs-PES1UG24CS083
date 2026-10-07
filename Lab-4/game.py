@@ -53,10 +53,14 @@ class Battleship:
                 print("You sank the fleet.")
                 return
 
-            ai_pos = self.ai.choose()  # 0-indexed (row, col) tuple
+            ai_pos = self.ai.choose()  # 0-indexed (row, col) tuple, or None
+            if ai_pos is None:
+                print("AI has no cells left to fire at.")
+                continue
             # 0-indexed internal -> 1-indexed for display
             print(f"AI fired at {ai_pos[0] + 1},{ai_pos[1] + 1}")
             hit, sunk = self.player.fire(ai_pos)
+            self.ai.report(ai_pos, hit)
             if hit:
                 print("AI scored a hit.")
             if sunk:
