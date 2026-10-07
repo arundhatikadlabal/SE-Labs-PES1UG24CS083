@@ -63,6 +63,8 @@ class Battleship:
             self.ai.report(ai_pos, hit)
             if hit:
                 print("AI scored a hit.")
+            else:
+                print("AI missed.")
             if sunk:
                 print(f"The AI sank your {sunk.name}!")
             if self.player.all_sunk():
