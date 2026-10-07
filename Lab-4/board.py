@@ -13,4 +13,4 @@ class Board:
         return pos in self.ships
 
     def all_sunk(self):
-        return self.ships <= self.shots
+        return self.ships <= self.shots 
