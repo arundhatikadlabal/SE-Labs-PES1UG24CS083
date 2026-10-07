@@ -11,12 +11,19 @@ class Battleship:
 
     def _setup(self):
         # Internal coordinates are 0-indexed (row, col) tuples.
-        self.player.place_ship({(1, 1), (1, 2), (1, 3)})
-        self.enemy.place_ship({(2, 2), (2, 3), (2, 4)})
+        # Fleet: sizes 3, 2, 2, no overlaps (Board.place_ship enforces this).
+        self.player.place_ship({(1, 1), (1, 2), (1, 3)}, "Cruiser")
+        self.player.place_ship({(3, 0), (4, 0)}, "Destroyer")
+        self.player.place_ship({(5, 3), (5, 4)}, "Submarine")
+
+        self.enemy.place_ship({(2, 2), (2, 3), (2, 4)}, "Cruiser")
+        self.enemy.place_ship({(0, 5), (1, 5)}, "Destroyer")
+        self.enemy.place_ship({(4, 0), (4, 1)}, "Submarine")
 
     def show(self):
         print("\nYour shots are coordinates like 2,3.")
         print("Ship cells remaining:", len(self.enemy.ships - self.enemy.shots))
+        print("Enemy ships remaining:", self.enemy.ships_remaining())
 
     def run(self):
         print("Battleship")
@@ -35,9 +42,13 @@ class Battleship:
                 print("Outside board.")
                 continue
             if pos in self.enemy.shots:
-                print("Already fired there.")
+                print(f"You already fired at {pos[0] + 1},{pos[1] + 1}. Choose another cell.")
                 continue
-            print("HIT!" if self.enemy.fire(pos) else "MISS!")
+
+            hit, sunk = self.enemy.fire(pos)
+            print("HIT!" if hit else "MISS!")
+            if sunk:
+                print(f"You sank the enemy {sunk.name}!")
             if self.enemy.all_sunk():
                 print("You sank the fleet.")
                 return
@@ -45,8 +56,11 @@ class Battleship:
             ai_pos = self.ai.choose()  # 0-indexed (row, col) tuple
             # 0-indexed internal -> 1-indexed for display
             print(f"AI fired at {ai_pos[0] + 1},{ai_pos[1] + 1}")
-            if self.player.fire(ai_pos):
+            hit, sunk = self.player.fire(ai_pos)
+            if hit:
                 print("AI scored a hit.")
+            if sunk:
+                print(f"The AI sank your {sunk.name}!")
             if self.player.all_sunk():
                 print("The AI sank your fleet.")
                 return 
