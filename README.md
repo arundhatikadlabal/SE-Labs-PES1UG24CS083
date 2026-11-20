@@ -31,14 +31,6 @@
 
 **Jira project link:** [https://aruukadlabal.atlassian.net/jira/software/c/projects/CEP/boards/34/backlog](https://aruukadlabal.atlassian.net/jira/software/c/projects/CEP/boards/34/backlog)
 
-## Lab 3: AttendEase - SRS, Software Architecture & Test Plan
-
-**Folder:** [`lab3_deliverables/`](lab3_deliverables/)
-
-- `AttendEase_SRS.pdf` - **Software Requirements Specification**
-- `AttendEase_SAD.pdf` - **Software Architecture Document**
-- `AttendEase_TestPlan.pdf` - **Test Plan**
-- `AttendEase_Combined_SRS_SAD_TestPlan.pdf` - all three documents combined into one file
 
 ## Lab 4: LLM-Assisted Debugging & Feature Development (Battleship vs AI)
 
@@ -124,11 +116,6 @@ SE-Labs-PES1UG24CS083/
 │   └── Lab3_ComponentModelling_PES1UG24CS083.pdf
 ├── Lab2_deliverables/
 │   └── Lab2_PES1UG24CS083_SectionB.pdf
-├── lab3_deliverables/
-│   ├── AttendEase_SRS.pdf
-│   ├── AttendEase_SAD.pdf
-│   ├── AttendEase_TestPlan.pdf
-│   └── AttendEase_Combined_SRS_SAD_TestPlan.pdf
 ├── Lab-4/
 │   ├── main.py
 │   ├── game.py
